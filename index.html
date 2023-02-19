@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <title>Atminas spele</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Matiss Arajs">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header" class="container-fluid bg-dark text-center text-white  p-5">
+        <h1>ATMIŅAS SPĒLE</h1>      
+    </div>
+
+    <dialog id="myDialog">
+        <h2>Uzvara ar <span id="beiguRez">0</span> gājieniem!</h2>
+        <button id="poga" onclick="poga()" type="button" class="btn btn-light btn-lg"><h2>Jauna spēle</h2></button>
+    </dialog>
+
+    <div id="laukums" class="container-fluid bg-white text-center text-white  p-5">
+        <img class="karte" id="bilde1" onclick="atvert('1')" src="image/backgr.png">
+        <img class="karte" id="bilde2" onclick="atvert('2')" src="image/backgr.png">
+        <img class="karte" id="bilde3" onclick="atvert('3')" src="image/backgr.png">
+        <img class="karte" id="bilde4" onclick="atvert('4')" src="image/backgr.png">
+        <img class="karte" id="bilde5" onclick="atvert('5')" src="image/backgr.png">
+        <img class="karte" id="bilde6" onclick="atvert('6')" src="image/backgr.png">
+        <img class="karte" id="bilde7" onclick="atvert('7')" src="image/backgr.png">
+        <img class="karte" id="bilde8" onclick="atvert('8')" src="image/backgr.png">
+        <img class="karte" id="bilde9" onclick="atvert('9')" src="image/backgr.png">
+        <img class="karte" id="bilde10" onclick="atvert('10')" src="image/backgr.png">
+        <img class="karte" id="bilde11" onclick="atvert('11')" src="image/backgr.png">
+        <img class="karte" id="bilde12" onclick="atvert('12')" src="image/backgr.png">
+    </div>
+    
+    <div class="container-fluid bg-dark text-center text-white  p-5">
+        <h2>Gājieni: <span id="gajieni">0</span> </h2>
+        <button id="poga" onclick="poga()" type="button" class="btn btn-light btn-lg"><h2>Restartēt</h2></button> 
+     </div> <!-- Noslinkoju meklējot bootsrtap text size, tapē ieliku vienkārš h2 tag pogu -->
+
+</body>
+</html>

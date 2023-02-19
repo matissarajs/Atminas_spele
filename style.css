@@ -1,0 +1,10 @@
+#laukums{
+    max-width: 1000px;
+    font-size: 0;   
+}
+
+.karte{
+    width: 23%;
+    margin: 1%;
+    transition: transform 0.5s;
+}
